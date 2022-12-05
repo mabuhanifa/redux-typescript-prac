@@ -4,6 +4,15 @@ interface Todo {
     text: string;
     done: boolean;
 }
+
+interface TodoState {
+    todos: Todo[];
+}
+
+const initialState: TodoState = {
+    todos: [],
+}
+
 const store = configureStore({
     reducer: {
 

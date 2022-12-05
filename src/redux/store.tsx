@@ -7,16 +7,14 @@ interface Todo {
     done: boolean;
 }
 
-interface TodoState {
+export interface TodoState {
     todos: Todo[];
 }
 
 type RootState = ReturnType<typeof store.getState>;
 
 
-export const initialState: TodoState = {
-    todos: [],
-}
+
 
 export const store = configureStore({
     reducer: {

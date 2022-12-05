@@ -1,5 +1,10 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { initialState } from "./store";
+import { TodoState } from "./store";
+
+
+export const initialState: TodoState = {
+    todos: [],
+}
 
 const todoSlice = createSlice({
     name: "counter",

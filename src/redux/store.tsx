@@ -1,4 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
+
 interface Todo {
     id: number;
     text: string;
@@ -9,7 +10,7 @@ interface TodoState {
     todos: Todo[];
 }
 
-const initialState: TodoState = {
+export const initialState: TodoState = {
     todos: [],
 }
 
